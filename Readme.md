@@ -1,65 +1,53 @@
-# Tetris Game
+# Tetris (C++)
 
-A classic Tetris implementation using C++ and Raylib.
+Welcome to **Tetris** — a classic tile‑matching puzzle game implemented in C++!  
+This project recreates the iconic Tetris gameplay where players rotate and drop falling pieces (tetrominoes) to complete horizontal lines and score points.
 
-## Project Structure
-Tetris/
-├── CMakeLists.txt # Build configuration
-├── main.cpp # Main game loop
-├── game.cpp # Game logic implementation
-├── game.h # Game class header
-├── grid.cpp # Grid management
-├── grid.h # Grid class header
-├── block.cpp # Block base class
-├── block.h # Block class header
-├── blocks.cpp # Tetromino shapes
-├── blocks.h # Shapes header
-├── colors.cpp # Color definitions
-├── colors.h # Colors header
-├── position.cpp # Position class
-├── position.h # Position header
-├── README.md # This documentation
-├── LICENSE # License file
-├── Sounds/ # Audio assets
-│ ├── music.mp3
-│ ├── rotate.mp3
-│ └── clear.mp3
-├── Font/ # Font assets
-│ └── monogram.ttf
-└── build/ # Build directory (generated)
+---
 
+## 🎮 Features
 
+- Classic Tetris gameplay with tetromino rotation and line clearing
+- Keyboard input handling
+- Basic graphics rendering using built‑in or library support (e.g., SDL2/SFML/OpenGL)
+- Includes **fonts** and **graphics** for in‑game visuals
+- Built with **CMake** for an easy cross‑platform build
 
-## Prerequisites
+---
 
-- CMake (version 3.10 or higher)
-- Raylib library
-- C++ compiler (GCC, Clang, or MSVC)
+## 🚀 Build & Run
 
-## Installation
+### 🧰 Prerequisites
 
-### Install Raylib
+- A C++ compiler (e.g., g++, clang++, or Visual Studio)
+- CMake (to configure and generate build files)
+- Game graphics and font libraries depending on your implementation (SDL2, SFML, etc.), if used
 
-#### macOS:
+---
+
+### 📋 Clone the Repo
+
 ```bash
-brew install raylib
-
-Ubuntu/Debian:
-
-bash
-sudo apt install libraylib-dev
-
-# 1. compile a game:
+git clone https://github.com/uraz-baltabayev/Tetris.git
+cd Tetris
 
 mkdir build
 cd build
-
-# 2. Regenerate CMake files
 cmake ..
-
-# 3. Rebuild from scratch
-make clean
 make
-# 4. Start a game
+
 ./Tetris
 
+
+Tetris/
+├── CMakeLists.txt
+├── main.cpp
+├── game.* # Game logic
+├── grid.* # Grid management
+├── block.* # Block base class
+├── blocks.* # Tetromino shapes
+├── colors.* # Color definitions
+├── position.* # Position utilities
+├── Font/ # Font assets
+├── Sounds/ # Sound assets
+└── README.md
